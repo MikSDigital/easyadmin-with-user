@@ -20,7 +20,7 @@ class PostsFixtures extends Fixture
 
     private function loadCategories(ObjectManager $manager)
     {
-        $aNames = ['Детям', 'Родителям', 'Для всей семьи'];
+        $aNames = ['Блоки питания', 'Майнеры', 'Видеокарты'];
 
         foreach ($aNames as $sName) {
             $category = new Category();

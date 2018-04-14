@@ -136,4 +136,22 @@ class Post
     public function __toString() {
         return $this->title;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    public function setCategory(Category $category)
+    {
+        $this->category = $category;
+        return $this;
+
+        // https://github.com/EasyCorp/EasyAdminBundle/issues/825
+        // Could not determine access type for property "category" in class Post.php
+    }
+
 }

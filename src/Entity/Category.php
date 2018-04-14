@@ -56,13 +56,12 @@ class Category
     }
 
     /**
-     * @return Collection|Post[]
+     * @return ArrayCollection|Post[]
      */
     public function getPosts()
     {
         return $this->posts;
     }
-
     public function __toString() {
         return $this->name;
     }
